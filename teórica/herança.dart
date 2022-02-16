@@ -6,12 +6,18 @@ class Animal {
     }
 }
 
-class Cao extends {
-
+class Cao extends Animal {
+  late String corOrelha;
+  void latir(){
+    print("latir");
+  }
 }
 
-class Passaro extends {
-
+class Passaro extends Animal {
+  late String corBico;
+  void voar(){
+    print("Voar!");
+  }
 }
 
 void main() {
@@ -20,9 +26,14 @@ void main() {
   Passaro passaro = Passaro();
 
   cao.cor = "Branco";
-  print(cao.cor);
+  cao.corOrelha = "preto";
+  print("Cor do cão: " + cao.cor);
+  print("Cor da Orelha: " + cao.corOrelha);
+  //print(cao.cor);
+  cao.latir();
 
   passaro.cor = "Vermelho";
   print(passaro.cor);
+  passaro.voar();
 
 }
