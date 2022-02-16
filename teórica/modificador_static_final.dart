@@ -1,4 +1,4 @@
-import 'dart:ffi';
+
 class Configuracoes {
 
   static String identificadorApp = "AJKKSAD";
